@@ -21,6 +21,11 @@
             var nome = document.querySelector('input[name=nome]')
             var idade = document.querySelector('input[name=idade]')
 
+            if (idade.value.length == 0) {
+                alert('idade é um campo obrigatório')
+                return //para matar o processo.
+            }
+
             var idadeNum = parseInt(idade.value)
 
             if (idadeNum >= 18) {
