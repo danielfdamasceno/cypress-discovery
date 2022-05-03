@@ -12,9 +12,27 @@
     <input type="number" name="idade" placeholder="Sua Idade" />
     <button type="button" onclick="verificarIdade()">Verificar Idade</button>
 
+    <h1>Vingadores</h1>
+
+    <button type="button" onclick="listarVingadores()">Listar Vingadores</button>
+
+    <ul>
+        <li>Tony Stark</li>
+        <li>Steve Rogers</li>
+        <li>Natasha Romanoff</li>
+        <li>Clint Barton</li>
+        <li>Bruce Banner</li>
+    </ul>
+
 
 
     <script type="text/javascript">
+
+        avengeres = ['Tony Stark','Steve Rogers', 'Natasha Romanoff', 'Clint Barton', 'Bruce Banner']
+
+        function listarVingadores() {
+            console.log(avengeres)
+        }
 
         function verificarIdade() {
         
